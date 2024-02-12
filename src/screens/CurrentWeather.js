@@ -17,7 +17,7 @@ export default function CurrentWeather({weatherData}) {
         <Feather name={weatherType[weatherCondition].icon} size={100} color="white" />
         <Text style={tempStyles}>{temp}</Text>
         <Text style={feels}>{`Feels Like ${feels_like}`}</Text>
-        <RowText message1={`High: ${temp_max}`} message2={`Low: ${temp_min}`} containerStyles={highLowWrapper} message1Styles={highLow} message2Styles={highLow} />
+        <RowText message1={`High: ${temp_max}° `} message2={`Low: ${temp_min}°`} containerStyles={highLowWrapper} message1Styles={highLow} message2Styles={highLow} />
       </View>
       <RowText message1={weather[0].description} message2={weatherType[weatherCondition].message} containerStyles={bodyWrapper} message1Styles={description} message2Styles={message} />
     </SafeAreaView>
